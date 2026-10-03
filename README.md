@@ -35,28 +35,23 @@ Invocation syntax belongs to the host. See the official
 
 ## Install the CLI
 
-The skill is public; the CLI is currently private. Installing the skill does not
-install the CLI or grant package access. Request access from your Osmo contact.
-
-The current CLI build requires macOS on Apple Silicon, arm64 Node.js 22, npm,
-and FFmpeg/ffprobe on `PATH`.
-
-Once your npm account has read access to `@osmo.inc/cli`:
+Installing the skill does not install the CLI. The skill tells your agent to
+install it when `osmo` is missing; to do it yourself:
 
 ```sh
-npm login
 npm install -g @osmo.inc/cli
+osmo login
 osmo --help
 ```
 
-You can also use `npx @osmo.inc/cli` as the command prefix, or install a private
-CLI archive supplied by Osmo. npm package access is separate from `osmo login`.
-If npm denies access, sign in with an authorized account or request package access.
+The current CLI build requires macOS on Apple Silicon, arm64 Node.js 22, npm,
+and FFmpeg/ffprobe on `PATH`. You can also use `npx @osmo.inc/cli` as the
+command prefix.
 
 For a new animation project:
 
 ```sh
-osmo init my-animation
+osmo studio init my-animation
 cd my-animation
 ```
 
