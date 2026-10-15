@@ -1,11 +1,24 @@
 # Osmo skills
 
-Create, preview, and render motion graphics with coding agents, then share a
-review link, apply feedback, and work with collaborators.
+Give a coding agent Osmo: an animation language with its own renderer, a creative
+toolkit, and a review workflow, all behind one CLI.
 
-One compact skill covers animated titles, lower thirds, kinetic typography, logo
-animations, overlays, and video compositions. The CLI supplies the detailed
-project instructions and API declarations for its installed version.
+- **Make motion graphics as editable code.** Animated titles, lower thirds,
+  kinetic typography, logo animations, overlays, product shots on 3D devices, and
+  video compositions, previewed and rendered locally without an account.
+- **Generate and process media on Osmo.** Video, images, speech, sound effects,
+  and music from models such as Seedance, Grok, Nano Banana, and GPT Image, plus
+  background removal for images and video and raster-to-SVG vectorizing. They
+  run on Osmo's servers against your account, which includes a free monthly
+  allowance.
+- **Use your own tools.** Shaders and ready-made 3D models from the catalog, and
+  images, footage, audio, fonts, and GLB models from Blender or any other tool.
+- **Share any video for review.** An MP4 from any tool goes on a review link with
+  timestamped comments, no Osmo project needed. Ask the agent to apply the
+  feedback and publish the next version to the same link.
+
+One compact skill covers all of it. The CLI supplies the detailed project
+instructions and API declarations for its installed version.
 
 ## Install the skill
 
@@ -28,9 +41,10 @@ The skill uses the [Agent Skills format](https://agentskills.io/specification).
 ## Use it
 
 Ask for the result you want, for example: “Make a five-second title animation,”
-“Share this video for feedback,” or “Apply the open review comments.” Agents that
-support automatic skill selection can discover Osmo without its name in the
-request. To select it explicitly:
+“Put our app on an iPhone,” “Remove the background from this clip,” “Generate a
+sound effect for the logo hit,” “Share this video for feedback,” or “Apply the
+open review comments.” Agents that support automatic skill selection can discover
+Osmo without its name in the request. To select it explicitly:
 
 - **Claude Code:** `/osmo Make a five-second title animation.`
 - **Codex CLI / IDE:** `$osmo Make a five-second title animation.`, or select it
@@ -73,9 +87,11 @@ requirements and commands.
 
 ## Share, get feedback, and work together
 
-Ask the agent to share your project. After sign-in, it can publish a review link
-where people comment on specific moments, areas, and layers. Ask it to apply the
-feedback, check the result, and publish an updated version to the same link.
+Ask the agent to share a video. After sign-in, it can publish any MP4, from any
+tool, on a review link where people comment on specific moments; no Osmo project
+is needed. For an Osmo project it publishes the project itself, so comments can
+also point at areas and layers. Ask it to apply the feedback, check the result,
+and publish an updated version to the same link.
 
 If someone should work on the video with you, ask the agent to give that person
 access. They can get their own editable copy, make changes, and publish updates
