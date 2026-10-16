@@ -13,8 +13,8 @@ toolkit, and a review workflow, all behind one CLI.
   allowance.
 - **Use your own tools.** Shaders and ready-made 3D models from the catalog, and
   images, footage, audio, fonts, and GLB models from Blender or any other tool.
-- **Share any video for review.** An MP4 from any tool goes on a review link with
-  timestamped comments, no Osmo project needed. Ask the agent to apply the
+- **Share any video for review.** An H.264 MP4 from any tool goes on a review link
+  with timestamped comments, no Osmo project needed. Ask the agent to apply the
   feedback and publish the next version to the same link.
 
 One compact skill covers all of it. The CLI supplies the detailed project
@@ -87,8 +87,8 @@ requirements and commands.
 
 ## Share, get feedback, and work together
 
-Ask the agent to share a video. After sign-in, it can publish any MP4, from any
-tool, on a review link where people comment on specific moments; no Osmo project
+Ask the agent to share a video. After sign-in, it can publish an H.264 MP4, from
+any tool, on a review link where people comment on specific moments; no Osmo project
 is needed. For an Osmo project it publishes the project itself, so comments can
 also point at areas and layers. Ask it to apply the feedback, check the result,
 and publish an updated version to the same link.
@@ -104,4 +104,4 @@ the CLI itself does not provide a continuous comment watcher.
 ## License
 
 The files in this repository are MIT licensed. This license does not cover or
-distribute the private Osmo CLI, renderer, or resource packages.
+distribute the proprietary Osmo CLI, renderer, or resource packages.
