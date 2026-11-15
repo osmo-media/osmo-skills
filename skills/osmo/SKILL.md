@@ -45,17 +45,28 @@ version. Use them instead of guessing.
 | Deploy a project for review | `osmo studio deploy` |
 | Read and answer comments | `osmo comments list SHARE --open --json`, `osmo studio comments list --open --json` |
 | Check plan usage | `osmo usage` |
+| Update the CLI | `osmo update`, `--check` to only ask |
 
 Every command takes `--json` and `--help`.
 
 ## Get started
 
 Use an existing `osmo` installation if `osmo studio --help` lists init, check,
-render, and deploy. Otherwise run `npx -y @osmo.inc/cli@latest --version`, then
-use `npx -y @osmo.inc/cli@<returned-version>` for this task. Below, `osmo` means
-that chosen command prefix. A global install is optional:
-`npm install -g @osmo.inc/cli`. If a cloud command reports the CLI is too old,
-switch to the npx prefix.
+render, and deploy. Otherwise use `npx -y @osmo.inc/cli@latest` for this task.
+Below, `osmo` means that chosen command prefix. Keep `@latest` in the npx
+prefix and never put a version number there: npm carries the CLI only up to
+0.1.28, and later releases are installed by `osmo update`, so a newer version
+number is not on npm. A global install is optional:
+`npm install -g @osmo.inc/cli`.
+
+Before starting, run `osmo update`. It installs the current release from Osmo's
+own hosting, or says the installed one is the latest. The copy npm installed
+stays where it is and runs the newer one from then on, under either prefix. If
+it can't reach the server, carry on with the installed version. If
+`osmo update` is an unknown command or answers with an npm command, the install
+is older than 0.1.28: run `npm install -g @osmo.inc/cli@latest`, or switch to
+the npx prefix, then run `osmo update` again. Do the same when a cloud command
+reports the CLI is too old.
 
 Local creation, preview, checking, and rendering need no login. When a cloud
 operation needs one, run `osmo login`, show the user the approval link it

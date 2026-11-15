@@ -66,14 +66,26 @@ npx -y @osmo.inc/cli@latest studio init my-animation
 cd my-animation
 ```
 
-For repeated commands, use the same resolved CLI version throughout the task.
-For regular use, a global install is also available:
+Keep `@latest` in that command. For regular use, a global install is also
+available:
 
 ```sh
 npm install -g @osmo.inc/cli
 osmo studio init my-animation
 cd my-animation
 ```
+
+npm carries the CLI up to 0.1.28. Later releases come from Osmo's own hosting:
+
+```sh
+osmo update
+```
+
+It installs the current release, and the copy npm installed runs it from then
+on, whether you start it as `osmo` or through `npx`. A version number above
+0.1.28 is not on npm, so `npx @osmo.inc/cli@<version>` fails for one. An
+install older than 0.1.28 has no `osmo update`: run
+`npm install -g @osmo.inc/cli@latest` first.
 
 These are alternative ways to start a project. Invoke the skill inside that
 folder with your animation brief. It reads the generated project guide and scene
